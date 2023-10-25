@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: skyblue;
+
+}
+.house {
+    position: relative;
+    width: 700px;
+    height: 350px;
+    background: skyblue;
+    border-bottom: 8px solid #175117;
+
+}
+/* main body of castle  */
+.main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;
+    height: 200px;
+    background: #E5E7E9;
+    
+}
+/* line at the top before the squares */
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #E5E7E9;
+
+}
+/* all the bricks  */
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-20px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+}
+.top2 {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-30px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top3 {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-70px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top4 {
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top5 {
+    position: absolute;
+    top: 70px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top6 {
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top7 {
+    position: absolute;
+    top: 70px;
+    left: 240px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top8 {
+    position: absolute;
+    top: 70px;
+    left: 280px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top9 {
+    position: absolute;
+    top: 70px;
+    left: 320px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+
+}
+.top10 {
+    position: absolute;
+    top: 70px;
+    left: 360px;
+    width: 20px;
+    height: 20px;
+    background: #E5E7E9;
+    transform: translateY(-90px);
+    
+
+}
+/* door  */
+.front {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+    background: dimgray;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.5);
+    border-top: 2px solid #222;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 8px solid rgba(0,0,0,0.2);
+
+}
+/* drawbridge  */
+.front2 {
+    position: absolute;
+    left: 23%;
+    transform: translateX(-50%);
+    bottom: -90px;
+    width: 130px;
+    height: 90px;
+    background: linear-gradient(maroon,brown);
+    box-shadow: 6px 6px 25px rgba(0,0,0,0.9);
+    border-top: 2px solid #222;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transform: rotateX(180deg) skewX(40deg);
+    border-right: 8px solid rgba(0,0,0,0.2);
+    
+}
+/* the river  */
+.river {
+    position: absolute;
+    top: 73.5%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(15,0,255),rgba(43,134,213),skyblue);
+    z-index: -1;
+    
+}
+/* the road  */
+.road {
+    position: absolute;
+    top: 84%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(186,74,0);
+    z-index: -1;
+    border-top: blur(40px);
+    
+}
+/* little window  */
+.windows_right {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    top: 30px;
+    width: 20px;
+    height: 60px;
+    background: dimgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 5px solid rgba(0,0,0,0.2);
+    box-shadow: 2px 0 0 0 rgba(0,0,0,0.1)
+    
+}
+/* little window  */
+.windows_left {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    top: 30px;
+    width: 20px;
+    height: 60px;
+    background: dimgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 5px solid rgba(0,0,0,0.2);
+    box-shadow: 2px 0 0 0 rgba(0,0,0,0.1)
+    
+}
+/* left side tall  */
+.side {
+    position: absolute;
+    width: 140px;
+    height: 260px;
+    bottom: 0;
+    left: 20px;
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+    background: #E5E7E9; 
+}
+/* right side tall */
+.side2 {
+    position: absolute;
+    width: 147px;
+    height: 260px;
+    bottom: 0;
+    right: 20px;
+    box-shadow: 8px 0 0 0 rgba(0,0,0,0.1);
+    background: #E5E7E9; 
+    border-left: 7px solid rgba(0,0,0,0.1);
+}
+/* window on left of turapet  */
+.side::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 70px;
+    background: dimgray;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 8px solid rgba(0,0,0,0.2);
+    box-shadow: 4px 0 0 0 rgba(0,0,0,0.1);
+
+}
+/* window on right turapet */
+.side2::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 70px;
+    background: dimgray;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 8px solid rgba(0,0,0,0.2);
+    box-shadow: 4px 0 0 0 rgba(0,0,0,0.1);
+
+}
+/* left flag  */
+.flag {
+    position: absolute;
+    left: 12.5%;
+    top: 0.5%;
+    width: 80px;
+    height: 40px;
+    background: #f00;
+    z-index: 1000;
+
+}
+.flag::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background: black;
+}
+/* right flag  */
+.flag2 {
+    position: absolute;
+    left: 86.8%;
+    top: 0.5%;
+    width: 80px;
+    height: 40px;
+    background: #f00;
+    z-index: 1000;
+
+}
+.flag2::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background: black;
+}
+/* sun  */
+.sun {
+    position: absolute;
+    left: 25%;
+    top: -30%;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    z-index: 1000;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left: 5px solid rgba(0,0,0,0.1);
+    border-bottom: 5px solid rgba(0,0,0,0.1);
+}
